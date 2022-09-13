@@ -1,0 +1,440 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Raleway:wght@500&family=Roboto+Slab:wght@500&family=Source+Code+Pro:wght@500&family=Yanone+Kaffeesatz:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 12px;
+    font-family: 'Source Code Pro';
+}
+a {
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+p{
+    color: white;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+ .sekcja-tytul{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+ .sekcja-tytul span{
+    color:  #002266;
+}
+body {
+    width: 100%;
+    height: auto;
+}
+/* Main Sekcja */
+#main{
+    background-image: url(https://cdn.discordapp.com/attachments/970868891062505522/975520136066916402/a_3e08d7b7e7fe9739685e56436e351ba2.gif);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#main::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+    z-index: -1;
+}
+#main h1{
+    
+    display: block;
+    width: fit-content;
+    font-size: 6rem;
+    position: relative;
+    color: grey;
+    text-shadow: 15px 0.5px  black    ;
+    animation: pojawianie_text .5s ease forwards;
+    animation: ;
+}
+#main h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: grey;
+    animation: pojawianie_sie_textu 1s ease;
+    animation-delay: 1s;
+}
+#main .cta{
+    display: block;
+    padding: 10px 30px;
+    color: grey;
+    background-color: transparent;
+    border: 2px solid #002266;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease-in background-color;
+    transition-property: background-color, color;
+
+}
+#main .cta:hover{
+    color: white;
+    background-color: black;
+}
+.brand h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.brand h1 span{
+    color: #002266;
+}
+
+/*Koniec Main Sekcja */
+
+/*Usługi Sekcja */
+#uslugii{
+}
+#uslugi .uslugi{
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 0;   
+    background-color: grey;
+    width:100%;
+   height:100%;
+   padding-top: 20px;
+    
+}
+#uslugi .sekcja-tytul{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#uslugi .sekcja-tytul span{
+    color:  #002266;
+}
+#uslugi .uslugi-gora p{
+    color: black;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+#uslugi .uslugi-dol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+   
+}
+#uslugi .uslugi-item{
+    flex-basis: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    background-image: url(https://cdn.discordapp.com/attachments/903766828847865866/998732673071714444/IMG_2642.jpg);
+    background-size: cover;
+    margin: 25px 5%;
+    color: white;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#uslugi .uslugi-item2{
+    flex-basis: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    background-image: url(https://cdn.discordapp.com/attachments/903766828847865866/998732637193637908/IMG_2643.jpg);
+    background-size: cover;
+    margin: 25px 5%;
+    color: white;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#uslugi .uslugi-item3{
+    flex-basis: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    background-image: url(https://cdn.discordapp.com/attachments/484660756076298241/1017756643334836264/Hummer-H1-2002-1024-03-848x500.jpg);
+    background-size: cover;
+    margin: 25px 5%;
+    color: white;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+#uslugi .uslugi-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .2;
+    z-index: -1;
+}
+
+#uslugi .uslugi-item h2{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#uslugi .uslugi-item p{
+    color: black;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+#uslugi .uslugi-item2::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .2;
+    z-index: -1;
+}
+
+#uslugi .uslugi-item2 h2{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#uslugi .uslugi-item2 p{
+    color: black;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+#uslugi .uslugi-item3::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .2;
+    z-index: -1;
+}
+
+#uslugi .uslugi-item3 h2{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#uslugi .uslugi-item3 p{
+    color: black;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+/*End usługi */
+
+
+/*  Poczatek projekt */
+
+#projekt .projekt{
+    flex-direction: column;
+    padding: 100px;
+    background-color: grey;
+    margin: 0 auto;
+}
+#projekt .projekt-header h1{
+margin-bottom: 50px;
+}
+#projket .all-projekt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.projekt .projekt-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 40px;
+    
+}
+#projekt .projekt-info{
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+
+}
+#projekt .projekt-info h1{
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+}
+
+#projekt .projekt-info h2{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 10px;
+    color: white;
+}
+#projekt .projekt-info p{
+    font-size: 1rem;
+    color: white;
+}
+
+#projekt .projekt-img{
+    height: 400px;
+    overflow: hidden;
+    width: 1400px;
+    margin: 0 auto;
+}
+#projekt .projekt-img img{
+    transition: 0.8s ease;
+}
+#projekt .projekt-item:hover .projekt-img img{
+    transform: scale(1.1);
+    
+}
+
+/* End  projekt */
+
+/* Kontakt */
+
+
+
+/* Kontakt END */
+#kontakt .kontakt{
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: grey;
+}
+#kontakt .kontakt-item{
+    width: 10%;
+    
+}
+#kontakt .kontakty-item{
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #C8C8C8	;
+    box-shadow: 0px 0px 18px 0 black;
+}
+
+#kontakt .kontakt-info h1{
+    font-size: 3.5rem;
+    font-weight: 1000;
+    
+}
+
+#kontakt .kontakt-info h2{
+    font-size: 1.5rem;
+    margin: 5px;
+ 
+    
+}
+
+/*footer*/
+#footer {
+    background-color: black;
+}
+#footer .footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+#footer .footer h2{
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*footer END*/
+/*Animacja */
+@keyframes pojawianie_sie_textu{
+    50%{
+    width: 100%;
+    left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes pojawanie_text{
+    100% {
+        color: grey;
+    }
+}
+/*End aNIMACJA */
